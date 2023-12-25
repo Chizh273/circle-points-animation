@@ -12,6 +12,9 @@ export const render = (
     circlesNumber: 5,
     pointsOnCircleNumber: 12,
     minCircleRadius: 100,
+    pointRadius: 3,
+    pointColor: '#fff',
+    lineColor: '#aaa',
   });
 
   const center = {
@@ -39,7 +42,7 @@ export const render = (
       },
     );
 
-    draw(ctx, points);
+    draw(ctx, points, settings);
 
     time += settings.speed;
     requestAnimationFrame(animate);

@@ -3,4 +3,7 @@ export type Settings = {
   circlesNumber: number;
   pointsOnCircleNumber: number;
   minCircleRadius: number;
+  pointRadius: number;
+  pointColor: string;
+  lineColor: string;
 };

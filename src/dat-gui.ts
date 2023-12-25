@@ -9,6 +9,11 @@ export const setupDatGui = (defaultSettings: Settings) => {
   gui.add(defaultSettings, 'pointsOnCircleNumber', 9, 27, 3);
   gui.add(defaultSettings, 'circlesNumber', 3, 9, 1);
   gui.add(defaultSettings, 'minCircleRadius', 50, 250, 1);
+  gui.add(defaultSettings, 'pointRadius', 1, 5, 1);
+
+  gui.addColor(defaultSettings, 'lineColor');
+  gui.addColor(defaultSettings, 'pointColor');
+
 
   return defaultSettings;
 };

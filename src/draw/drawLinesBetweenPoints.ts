@@ -8,10 +8,11 @@ export const drawLinesBetweenPoints = (
   prevRowPoint?: Point,
   nextRowPoint?: Point,
   drawBetweenCirclesLines = false,
+  color = '#aaa',
 ) => {
   ctx.beginPath();
   ctx.lineWidth = 1;
-  ctx.strokeStyle = '#aaa';
+  ctx.strokeStyle = color;
   ctx.moveTo(nextPoint.x, nextPoint.y);
   ctx.lineTo(prevPoint.x, prevPoint.y);
 
